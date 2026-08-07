@@ -54,6 +54,14 @@
     .map-wrap iframe { display: block; width: 100%; flex: 1; min-height: 280px; border: 0; background: var(--bg-1); filter: grayscale(1) invert(0.92) contrast(0.9) hue-rotate(190deg) saturate(2.2); }
     .map-links { display: flex; gap: 12px; padding: 16px; border-top: 1px solid var(--line); background: rgba(6,15,31,0.6); }
     .map-links .btn { flex: 1; justify-content: center; padding: 11px 16px; font-size: 14px; }
+    /* responsive */
+    @media (max-width: 900px) {
+      .contact-grid { grid-template-columns: 1fr; }
+    }
+    @media (max-width: 560px) {
+      .form-row { grid-template-columns: 1fr; gap: 0; }
+      .form-card { padding: 28px 22px; }
+    }
   </style>
 </head>
 <body>
@@ -64,7 +72,7 @@
 <header class="nav">
   <div class="nav-inner">
     <a href="index.html" class="logo"><span class="logo-d">D</span>GURU</a>
-    <nav class="menu">
+    <nav class="menu" id="site-menu">
       <a href="index.html">Home</a>
       <a href="technology.html">Technology</a>
       <a href="service.html">Service</a>
@@ -73,6 +81,7 @@
     </nav>
     <div class="nav-cta">
       <a href="mailto:ssh@dataguru.co.kr" class="btn btn-primary">메일 보내기</a>
+      <button class="nav-toggle" type="button" aria-label="메뉴 열기" aria-expanded="false" aria-controls="site-menu"><span></span><span></span><span></span></button>
     </div>
   </div>
 </header>

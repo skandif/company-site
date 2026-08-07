@@ -50,6 +50,18 @@
     .feature-cols li { position: relative; display: block; padding: 8px 0 8px 22px; color: var(--text-1); font-size: 14.5px; }
     .feature-cols li::before { content: "▸"; color: var(--cyan); font-size: 12px; position: absolute; left: 0; top: 10px; }
     .feature-cols li b { color: var(--text-0); font-weight: 600; }
+    /* responsive */
+    @media (max-width: 900px) {
+      .sol-grid { grid-template-columns: 1fr; gap: 28px; margin-top: 32px; }
+      .sol-name { font-size: clamp(30px, 7vw, 44px); }
+      .feature-cols { grid-template-columns: 1fr; }
+      .sol-tagline { font-size: 18px; }
+    }
+    @media (max-width: 480px) {
+      .metric-panel { grid-template-columns: 1fr; padding: 22px; }
+      .metric-panel .m:nth-last-child(-n+2) { border-bottom: 1px dashed rgba(148,180,255,0.1); }
+      .metric-panel .m:last-child { border-bottom: none; }
+    }
   </style>
 </head>
 <body>
@@ -60,7 +72,7 @@
 <header class="nav">
   <div class="nav-inner">
     <a href="index.html" class="logo"><span class="logo-d">D</span>GURU</a>
-    <nav class="menu">
+    <nav class="menu" id="site-menu">
       <a href="index.html">Home</a>
       <a href="technology.html" class="active">Technology</a>
       <a href="service.html">Service</a>
@@ -69,6 +81,7 @@
     </nav>
     <div class="nav-cta">
       <a href="contact.html" class="btn btn-primary">프로젝트 문의</a>
+      <button class="nav-toggle" type="button" aria-label="메뉴 열기" aria-expanded="false" aria-controls="site-menu"><span></span><span></span><span></span></button>
     </div>
   </div>
 </header>

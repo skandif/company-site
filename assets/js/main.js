@@ -154,6 +154,30 @@
   window.addEventListener("scroll", onScroll, { passive: true });
   onScroll();
 
+  /* ---------- nav: mobile hamburger menu ---------- */
+  const navToggle = document.querySelector(".nav-toggle");
+
+  function closeMenu() {
+    if (!nav) return;
+    nav.classList.remove("menu-open");
+    if (navToggle) {
+      navToggle.setAttribute("aria-expanded", "false");
+      navToggle.setAttribute("aria-label", "메뉴 열기");
+    }
+  }
+
+  if (navToggle && nav) {
+    navToggle.addEventListener("click", () => {
+      const open = nav.classList.toggle("menu-open");
+      navToggle.setAttribute("aria-expanded", String(open));
+      navToggle.setAttribute("aria-label", open ? "메뉴 닫기" : "메뉴 열기");
+    });
+    document.querySelectorAll(".menu a").forEach((a) => a.addEventListener("click", closeMenu));
+    window.addEventListener("resize", () => {
+      if (window.innerWidth > 900) closeMenu();
+    });
+  }
+
   /* ---------- icon font: reveal after load (FOUT 방지) ---------- */
   if (document.fonts && document.fonts.ready) {
     document.fonts.ready.then(() => document.documentElement.classList.add("fonts-loaded"));

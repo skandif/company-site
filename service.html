@@ -44,6 +44,16 @@
     .fw-twin .box { border-radius: 12px; border: 1px dashed var(--line-strong); padding: 18px 16px; display: flex; flex-direction: column; justify-content: center; }
     .fw-twin .box b { display: block; font-size: 13.5px; color: var(--cyan); font-family: var(--font-mono); letter-spacing: 0.06em; margin-bottom: 10px; }
     .fw-twin .box span { display: block; font-size: 13.5px; color: var(--text-1); padding: 3px 0; }
+    /* responsive */
+    @media (max-width: 1024px) {
+      .fw { grid-template-columns: 1fr; }
+    }
+    @media (max-width: 900px) {
+      .phase-grid { grid-template-columns: 1fr; }
+    }
+    @media (max-width: 560px) {
+      .fw-twin { grid-template-columns: 1fr; }
+    }
   </style>
 </head>
 <body>
@@ -54,7 +64,7 @@
 <header class="nav">
   <div class="nav-inner">
     <a href="index.html" class="logo"><span class="logo-d">D</span>GURU</a>
-    <nav class="menu">
+    <nav class="menu" id="site-menu">
       <a href="index.html">Home</a>
       <a href="technology.html">Technology</a>
       <a href="service.html" class="active">Service</a>
@@ -63,6 +73,7 @@
     </nav>
     <div class="nav-cta">
       <a href="contact.html" class="btn btn-primary">프로젝트 문의</a>
+      <button class="nav-toggle" type="button" aria-label="메뉴 열기" aria-expanded="false" aria-controls="site-menu"><span></span><span></span><span></span></button>
     </div>
   </div>
 </header>
