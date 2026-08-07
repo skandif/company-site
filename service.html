@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>디구루(DGURU) | Service | 엔터프라이즈 AI 서비스</title>
+  <meta name="description" content="GenAI-Ready 데이터 엔지니어링, LLM 최적화, 적응형 예측 분석. 디구루의 엔드투엔드 AI 인텔리전스 파이프라인." />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="디구루 DGURU" />
+  <meta property="og:title" content="디구루(DGURU) Service | 엔터프라이즈 AI 서비스" />
+  <meta property="og:description" content="데이터 엔지니어링, LLM 최적화, 적응형 예측 분석. 3단계로 완성되는 AI 트랜스포메이션." />
+  <meta name="twitter:card" content="summary" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23060f1f'/%3E%3Ctext x='32' y='45' font-family='Arial' font-size='38' font-weight='700' fill='%234d8dff' text-anchor='middle'%3ED%3C/text%3E%3C/svg%3E" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <noscript><style>.reveal{opacity:1;transform:none}.material-symbols-outlined{opacity:1}</style></noscript>
+  <style>
+    .page-hero { min-height: 62svh; }
+    .phase-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; position: relative; }
+    .phase-num {
+      font-family: var(--font-display); font-size: 46px; font-weight: 700;
+      background: var(--grad-text); -webkit-background-clip: text; background-clip: text;
+      -webkit-text-fill-color: transparent; line-height: 1; margin-bottom: 16px;
+    }
+    .phase-card .outcome {
+      margin-top: 22px; padding: 10px 16px; border-radius: 10px;
+      background: rgba(45,217,255,0.07); border: 1px solid rgba(45,217,255,0.2);
+      font-family: var(--font-mono); font-size: 12px; letter-spacing: 0.08em; color: var(--cyan);
+      display: inline-block;
+    }
+    /* framework diagram */
+    .fw { display: grid; grid-template-columns: 0.8fr 1.4fr 0.8fr; gap: 22px; align-items: stretch; }
+    .fw-col { border-radius: var(--radius); border: 1px solid var(--line); background: linear-gradient(160deg, rgba(148,180,255,0.05), rgba(148,180,255,0.015)); padding: 28px 26px; display: flex; flex-direction: column; gap: 12px; }
+    .fw-col h3 { font-size: 15px; font-family: var(--font-mono); letter-spacing: 0.14em; text-transform: uppercase; color: var(--text-2); margin-bottom: 8px; font-weight: 600; text-align: center; }
+    .fw-item { padding: 12px 16px; border-radius: 10px; border: 1px solid var(--line); background: rgba(148,180,255,0.04); font-size: 14px; color: var(--text-1); flex: 1; display: flex; align-items: center; justify-content: center; text-align: center; }
+    .fw-core { border-color: rgba(77,141,255,0.4); box-shadow: 0 0 40px rgba(31,94,255,0.12) inset; align-items: center; text-align: center; }
+    .fw-core .core-title { font-family: var(--font-display); font-size: 22px; font-weight: 700; margin-bottom: 2px; }
+    .fw-core .chip-row { justify-content: center; margin: 10px 0 8px; }
+    .fw-twin { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; width: 100%; flex: 1; }
+    .fw-twin .box { border-radius: 12px; border: 1px dashed var(--line-strong); padding: 18px 16px; display: flex; flex-direction: column; justify-content: center; }
+    .fw-twin .box b { display: block; font-size: 13.5px; color: var(--cyan); font-family: var(--font-mono); letter-spacing: 0.06em; margin-bottom: 10px; }
+    .fw-twin .box span { display: block; font-size: 13.5px; color: var(--text-1); padding: 3px 0; }
+  </style>
+</head>
+<body>
+
+<canvas id="bg-canvas" aria-hidden="true"></canvas>
+<div class="bg-vignette"></div>
+
+<header class="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="logo"><span class="logo-d">D</span>GURU</a>
+    <nav class="menu">
+      <a href="index.html">Home</a>
+      <a href="technology.html">Technology</a>
+      <a href="service.html" class="active">Service</a>
+      <a href="performance.html">Performance</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <div class="nav-cta">
+      <a href="contact.html" class="btn btn-primary">프로젝트 문의</a>
+    </div>
+  </div>
+</header>
+
+<!-- ===== PAGE HERO ===== -->
+<section class="hero page-hero">
+  <div class="wrap">
+    <div class="hero-badge reveal in"><span class="dot"></span>Enterprise AI Service</div>
+    <h1 class="h-display reveal in">데이터에서 지능까지,<br /><span class="grad-text">끊김 없는 파이프라인</span></h1>
+    <p class="lead reveal" data-delay="1">
+      디구루는 생성형 AI(GenAI)와 예측 ML을 하나의 파이프라인으로 설계합니다.
+      데이터 엔지니어링, LLM 최적화, 적응형 예측 분석. 세 단계가 유기적으로 맞물려
+      비즈니스 목표를 현실로 만듭니다.
+    </p>
+    <div class="chip-row reveal" data-delay="2" style="margin-top:30px">
+      <span class="chip hl">GenAI-Ready Data</span>
+      <span class="chip hl">LLM Fine-tuning</span>
+      <span class="chip hl">Agentic RAG</span>
+      <span class="chip hl">Predictive ML</span>
+      <span class="chip hl">MLOps · LLMOps</span>
+    </div>
+  </div>
+</section>
+
+<!-- ===== AI PIPELINE ===== -->
+<section class="section" id="pipeline">
+  <div class="watermark" aria-hidden="true">PIPELINE</div>
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">AI Intelligence Pipeline</span>
+      <h2 class="h-section">3단계로 완성되는 AI 트랜스포메이션</h2>
+      <p class="lead">각 단계는 독립적으로도, 전체 파이프라인으로도 도입할 수 있습니다. 현재 데이터 성숙도에 맞는 지점부터 시작하세요.</p>
+    </div>
+    <div class="phase-grid">
+      <div class="card phase-card reveal">
+        <div class="phase-num">01</div>
+        <span class="tag">Data Engineering</span>
+        <h3 style="margin-top:16px">GenAI-Ready<br />데이터 엔지니어링</h3>
+        <p style="margin-top:10px">고품질 AI를 위한 데이터 자산화와 파이프라인 최적화.</p>
+        <ul class="kbd-list">
+          <li>정형·비정형 데이터 통합 및 최적화</li>
+          <li>벡터 DB 기반 하이브리드 검색 인프라</li>
+          <li>시맨틱 레이어 · 데이터 거버넌스 수립</li>
+          <li>6차원 데이터 품질 자동 진단</li>
+          <li>인텔리전트 데이터 오케스트레이션</li>
+        </ul>
+        <span class="outcome">→ DATA FOUNDATION · 확장성과 안정성</span>
+      </div>
+      <div class="card phase-card reveal" data-delay="1">
+        <div class="phase-num">02</div>
+        <span class="tag">GenAI · LLM</span>
+        <h3 style="margin-top:16px">LLM · 파운데이션<br />모델 최적화</h3>
+        <p style="margin-top:10px">최신 Foundation Model로 도메인 특화 지능을 구현.</p>
+        <ul class="kbd-list">
+          <li>도메인 특화 sLLM 파인튜닝 (SFT · DPO · QLoRA)</li>
+          <li>Agentic RAG 기반 의사결정 지원 시스템</li>
+          <li>환각 차단 그라운딩 · 출처 인용 체계</li>
+          <li>온프레미스 LLM 구축 (데이터 주권 보장)</li>
+          <li>멀티모달 데이터 분석 엔진</li>
+        </ul>
+        <span class="outcome">→ MODEL INTELLIGENCE · 정밀도와 신뢰</span>
+      </div>
+      <div class="card phase-card reveal" data-delay="2">
+        <div class="phase-num">03</div>
+        <span class="tag">Predictive ML</span>
+        <h3 style="margin-top:16px">적응형 ML ·<br />예측 분석</h3>
+        <p style="margin-top:10px">비즈니스 리스크를 사전에 관리하는 예측 모델링.</p>
+        <ul class="kbd-list">
+          <li>수요·물동량 시계열 예측 (18종 모델 앙상블)</li>
+          <li>고장예지·예지정비(PdM) 모델</li>
+          <li>에너지 발전·소비 예측 및 최적화</li>
+          <li>자동 재학습(CT)으로 성능 유지</li>
+          <li>MLOps 기반 모델 모니터링·배포</li>
+        </ul>
+        <span class="outcome">→ PREDICTIVE VALUE · 민첩성과 최적화</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FRAMEWORK ===== -->
+<section class="section" style="background:rgba(6,15,31,0.45)" id="framework">
+  <div class="watermark" aria-hidden="true">FRAMEWORK</div>
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">Service Framework</span>
+      <h2 class="h-section">수집부터 가치 전달까지, 하나의 프레임워크</h2>
+      <p class="lead">어떤 데이터가 들어와도, 검증된 코어 엔진을 거쳐 측정 가능한 비즈니스 성과로 나갑니다.</p>
+    </div>
+    <div class="fw">
+      <div class="fw-col reveal">
+        <h3>Data Sources</h3>
+        <div class="fw-item">Industrial IoT · 센서 스트림</div>
+        <div class="fw-item">Enterprise ERP · DB</div>
+        <div class="fw-item">Web · SaaS · 로그</div>
+        <div class="fw-item">공공 오픈데이터 (기상·경제·국토)</div>
+        <div class="fw-item">문서 · 비정형 데이터</div>
+      </div>
+      <div class="fw-col fw-core reveal" data-delay="1">
+        <h3>Core Engine</h3>
+        <div class="core-title grad-text">Adaptive Intelligence Foundation</div>
+        <p style="color:var(--text-1);font-size:14px">디구루 솔루션 스위트가 구동하는 통합 지능 엔진</p>
+        <div class="chip-row">
+          <span class="chip">Autonomous Pipeline</span>
+          <span class="chip">Semantic Layer</span>
+          <span class="chip">Privacy-Preserving</span>
+          <span class="chip">On-Premise Ready</span>
+        </div>
+        <div class="fw-twin">
+          <div class="box">
+            <b>GENAI INTELLIGENCE</b>
+            <span>sLLM Fine-tuning (QLoRA)</span>
+            <span>Vector Embedding · Qdrant</span>
+            <span>Agentic RAG · CRAG</span>
+            <span>Semantic · Hybrid Search</span>
+          </div>
+          <div class="box">
+            <b>ADVANCED ANALYTICS</b>
+            <span>Time-series Forecasting</span>
+            <span>Predictive Maintenance</span>
+            <span>Deep Neural Networks</span>
+            <span>Simulation · Digital Twin</span>
+          </div>
+        </div>
+      </div>
+      <div class="fw-col reveal" data-delay="2">
+        <h3>Business Outcomes</h3>
+        <div class="fw-item">수요예측 · 재고 최적화</div>
+        <div class="fw-item">예지정비 · 돌발 정지를 계획 정비로</div>
+        <div class="fw-item">에너지 비용 절감</div>
+        <div class="fw-item">의사결정 인텔리전스</div>
+        <div class="fw-item">CX 초개인화</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== DELIVERY PRINCIPLES ===== -->
+<section class="section">
+  <div class="watermark" aria-hidden="true">PRINCIPLE</div>
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">How We Deliver</span>
+      <h2 class="h-section">디구루가 일하는 방식</h2>
+    </div>
+    <div class="grid grid-4">
+      <div class="card reveal">
+        <div class="card-icon"><span class="material-symbols-outlined" aria-hidden="true">target</span></div>
+        <h3>Pilot-First 검증</h3>
+        <p>실 데이터 기반 Pilot Test로 성능을 먼저 증명하고 확산합니다. 검증 없는 확장은 없습니다.</p>
+      </div>
+      <div class="card reveal" data-delay="1">
+        <div class="card-icon"><span class="material-symbols-outlined" aria-hidden="true">lock</span></div>
+        <h3>데이터 주권 보장</h3>
+        <p>온프레미스 구동, PII 마스킹, 외부 반출 차단으로 민감 데이터는 고객 인프라를 떠나지 않습니다.</p>
+      </div>
+      <div class="card reveal" data-delay="2">
+        <div class="card-icon"><span class="material-symbols-outlined" aria-hidden="true">autorenew</span></div>
+        <h3>지속 가능한 운영</h3>
+        <p>자동 재학습과 MLOps 모니터링, 담당자 교육까지, 도입 후에도 모델이 살아있게 만듭니다.</p>
+      </div>
+      <div class="card reveal" data-delay="3">
+        <div class="card-icon"><span class="material-symbols-outlined" aria-hidden="true">straighten</span></div>
+        <h3>정량 성과 약속</h3>
+        <p>정확도·절감률·예측력. 모든 프로젝트의 목표를 숫자로 정의하고 숫자로 보고합니다.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CTA ===== -->
+<section class="section" style="padding-top:20px">
+  <div class="wrap">
+    <div class="cta-band reveal">
+      <span class="eyebrow" style="justify-content:center">Start Your AI Transformation</span>
+      <h2 style="margin-top:14px">AI 트랜스포메이션,<br /><span class="grad-text">어디서부터 시작할지 함께 설계합니다</span></h2>
+      <p>데이터 성숙도 진단부터 PoC, 전사 확산까지 단계별 로드맵을 제안드립니다.</p>
+      <a href="contact.html?t=roadmap" class="btn btn-primary">도입 로드맵 상담 신청 <span class="arr" aria-hidden="true">→</span></a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <a href="index.html" class="logo"><span class="logo-d">D</span>GURU</a>
+        <p class="slogan">데이터에서 지능으로, 지능에서 가치로.<br />AI 핵심을 설계하는 데이터 인텔리전스 전문기업.</p>
+      </div>
+      <div>
+        <h4>Sitemap</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="technology.html">Technology</a></li>
+          <li><a href="service.html">Service</a></li>
+          <li><a href="performance.html">Performance</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Company</h4>
+        <ul class="info">
+          <li><b>(주)디구루</b> · 대표 소수환</li>
+          <li>사업자등록번호 249-88-00530</li>
+          <li>경기도 성남시 분당구 황새울로 315, 302호</li>
+          <li>Tel 031-698-3787 · Fax 070-4324-3788</li>
+          <li><a href="mailto:ssh@dataguru.co.kr">ssh@dataguru.co.kr</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 DGURU Co., Ltd. All rights reserved.</span>
+      <span class="mono-label">From Data to Intelligence, From Intelligence to Value</span>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>

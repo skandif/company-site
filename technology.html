@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>디구루(DGURU) | Technology | 자체 개발 AI 솔루션 5종</title>
+  <meta name="description" content="디구루의 5대 AI 솔루션: AI Servor, InsightFinder, DocVec, PredictOps, DataForge. 디지털 트윈부터 RAG, MLOps, 노코드 EDA까지." />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="디구루 DGURU" />
+  <meta property="og:title" content="디구루(DGURU) Technology | 자체 개발 AI 솔루션 5종" />
+  <meta property="og:description" content="노코드 EDA, 물리·AI 디지털 트윈, 온프레미스 RAG, MLOps 예측 시뮬레이션. 현장에서 태어난 솔루션." />
+  <meta name="twitter:card" content="summary" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23060f1f'/%3E%3Ctext x='32' y='45' font-family='Arial' font-size='38' font-weight='700' fill='%234d8dff' text-anchor='middle'%3ED%3C/text%3E%3C/svg%3E" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <noscript><style>.reveal{opacity:1;transform:none}.material-symbols-outlined{opacity:1}</style></noscript>
+  <style>
+    .page-hero { min-height: 62svh; }
+    .sol-block { padding: clamp(64px, 8vw, 100px) 0; border-top: 1px solid var(--line); position: relative; }
+    .sol-block.alt { background: rgba(6, 15, 31, 0.45); }
+    .sol-head { display: flex; align-items: center; gap: 20px; flex-wrap: wrap; margin-bottom: 14px; }
+    .sol-icon {
+      width: 52px; height: 52px; border-radius: 12px; display: grid; place-items: center;
+      background: linear-gradient(140deg, rgba(77,141,255,0.22), rgba(45,217,255,0.1));
+      border: 1px solid rgba(77,141,255,0.3);
+    }
+    .sol-num {
+      font-family: var(--font-mono); font-size: 13px; letter-spacing: 0.2em;
+      color: var(--cyan); border: 1px solid rgba(45,217,255,0.3); border-radius: 8px; padding: 6px 12px;
+    }
+    .sol-name { font-family: var(--font-display); font-size: 44px; font-weight: 700; letter-spacing: -0.02em; margin: 0; }
+    .sol-cat { font-size: 15px; color: var(--text-2); font-family: var(--font-mono); letter-spacing: 0.06em; }
+    .sol-tagline { font-size: 21px; color: var(--text-0); font-weight: 600; margin: 10px 0 14px; }
+    .sol-desc { color: var(--text-1); max-width: 760px; }
+    .sol-grid { display: grid; grid-template-columns: 1.15fr 0.85fr; gap: 40px; margin-top: 44px; align-items: start; }
+    .metric-panel {
+      border-radius: var(--radius); border: 1px solid var(--line);
+      background: linear-gradient(160deg, rgba(148,180,255,0.06), rgba(148,180,255,0.015));
+      padding: 28px; display: grid; grid-template-columns: 1fr 1fr; gap: 4px 20px;
+    }
+    .metric-panel .m { padding: 16px 4px; border-bottom: 1px dashed rgba(148,180,255,0.1); }
+    .metric-panel .m:nth-last-child(-n+2) { border-bottom: none; }
+    .metric-panel .v { font-family: var(--font-display); font-size: 27px; font-weight: 700; color: var(--cyan); letter-spacing: -0.02em; line-height: 1.2; }
+    .metric-panel .k { font-size: 12.5px; color: var(--text-2); margin-top: 4px; line-height: 1.45; }
+    .feature-cols { display: grid; grid-template-columns: 1fr 1fr; gap: 6px 28px; margin-top: 22px; }
+    .feature-cols li { position: relative; display: block; padding: 8px 0 8px 22px; color: var(--text-1); font-size: 14.5px; }
+    .feature-cols li::before { content: "▸"; color: var(--cyan); font-size: 12px; position: absolute; left: 0; top: 10px; }
+    .feature-cols li b { color: var(--text-0); font-weight: 600; }
+  </style>
+</head>
+<body>
+
+<canvas id="bg-canvas" aria-hidden="true"></canvas>
+<div class="bg-vignette"></div>
+
+<header class="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="logo"><span class="logo-d">D</span>GURU</a>
+    <nav class="menu">
+      <a href="index.html">Home</a>
+      <a href="technology.html" class="active">Technology</a>
+      <a href="service.html">Service</a>
+      <a href="performance.html">Performance</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <div class="nav-cta">
+      <a href="contact.html" class="btn btn-primary">프로젝트 문의</a>
+    </div>
+  </div>
+</header>
+
+<!-- ===== PAGE HERO ===== -->
+<section class="hero page-hero">
+  <div class="wrap">
+    <div class="hero-badge reveal in"><span class="dot"></span>Product Suite · 5 Solutions</div>
+    <h1 class="h-display reveal in">현장에서 태어난<br /><span class="grad-text">자체 개발 AI 솔루션</span></h1>
+    <p class="lead reveal" data-delay="1">
+      디구루의 솔루션은 컨설팅 보고서가 아니라 코드로 존재합니다.
+      물리·AI 디지털 트윈부터 온프레미스 RAG, MLOps 기반 예측 시뮬레이션, 노코드 EDA까지,
+      환각 차단·데이터 주권·재현성을 원칙으로 설계했습니다.
+    </p>
+    <div class="chip-row reveal" data-delay="2" style="margin-top:30px">
+      <span class="chip hl">On-Premise LLM</span>
+      <span class="chip hl">RAG Pipeline</span>
+      <span class="chip hl">Digital Twin</span>
+      <span class="chip hl">MLOps · AutoML</span>
+      <span class="chip hl">Grounded AI</span>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 01 AI Servor ===== -->
+<section class="sol-block" id="aiservor">
+  <div class="watermark" aria-hidden="true">TWIN</div>
+  <div class="wrap">
+    <div class="sol-head reveal">
+      <span class="sol-icon"><span class="material-symbols-outlined" aria-hidden="true">precision_manufacturing</span></span>
+      <span class="sol-num">SOLUTION 01</span>
+      <h2 class="sol-name">AI Servor</h2>
+      <span class="sol-cat">Physics-Informed AI · Digital Twin</span>
+    </div>
+    <p class="sol-tagline reveal">예측을 넘어, 처방까지. 제조 암묵지를 디지털 트윈으로.</p>
+    <p class="sol-desc reveal" data-delay="1">
+      알루미늄 다이캐스팅 평탄화 교정의 숙련공 노하우를 <strong>물리 해석 + AI가 결합된 디지털 트윈</strong>으로 전환합니다.
+      3D CAD 형상과 합금 물성, 단 2개의 입력만으로 변형 예측은 물론 서보 배치와 가압 스트로크라는
+      <strong>처방(Prescriptive AI)</strong>까지 설계 단계에서 자동 산출합니다.
+    </p>
+    <div class="sol-grid">
+      <div class="reveal" data-delay="1">
+        <ul class="feature-cols">
+          <li><b>2입력 → 교정 전략 완성</b>:&nbsp;실물·시제 없이 CAD + 물성만으로 설계 단계 도출, 신규 합금은 물성 등록만으로 즉시 반영</li>
+          <li><b>몬테카를로 × 비지도 AI 군집</b>:&nbsp;수천 회 변형 시뮬레이션을 소수 대표 변형유형으로 자동 압축</li>
+          <li><b>Full-Rank 최소 서보 설계</b>:&nbsp;모든 휨 모드를 독립 제어하는 최소 서보 수와 유형별 스트로크 산출</li>
+          <li><b>False-Green 차단</b>:&nbsp;검증값과 모델 추정을 구조적으로 분리, 실측 보정 전 합격 판정 원천 봉쇄</li>
+          <li><b>합금·형상 무관 단일 엔진</b>:&nbsp;11단계 파이프라인, 코드 수정 없이 신규 부품 대응</li>
+          <li><b>클로즈드 루프 고도화</b>:&nbsp;현장 실측(3D 스캔·서보 힘) 역추정으로 운용할수록 정밀해지는 순환 구조</li>
+        </ul>
+      </div>
+      <div class="metric-panel reveal" data-delay="2">
+        <div class="m"><div class="v">0.12%</div><div class="k">고유주파수 예측 오차 (해석해 대비)</div></div>
+        <div class="m"><div class="v">0.956</div><div class="k">변형유형 군집 안정성 (ARI)</div></div>
+        <div class="m"><div class="v">±0.3mm</div><div class="k">센서 기반 정량 합격 기준</div></div>
+        <div class="m"><div class="v">11단계</div><div class="k">입력→처방 E2E 파이프라인</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 02 InsightFinder ===== -->
+<section class="sol-block alt" id="insightfinder">
+  <div class="watermark" aria-hidden="true">RAG</div>
+  <div class="wrap">
+    <div class="sol-head reveal">
+      <span class="sol-icon"><span class="material-symbols-outlined" aria-hidden="true">travel_explore</span></span>
+      <span class="sol-num">SOLUTION 02</span>
+      <h2 class="sol-name">InsightFinder</h2>
+      <span class="sol-cat">Agentic RAG · Local sLLM · Semantic Search</span>
+    </div>
+    <p class="sol-tagline reveal">질문 한 줄에서 분석기획 보고서까지. 의미·맥락에 충실한 결과물을 생성합니다.</p>
+    <p class="sol-desc reveal" data-delay="1">
+      자연어 질문 하나면 보유 데이터로 <strong>"무엇을 분석할 수 있는지"를 RAG가 찾아 추천</strong>하고
+      분석기획 보고서 초안까지 자동 생성합니다. 실제 DB 스키마에 그라운딩된 버티컬 특화 엔진으로,
+      온프레미스 GPU에서 경량 sLLM으로 구동됩니다.
+    </p>
+    <div class="sol-grid">
+      <div class="reveal" data-delay="1">
+        <ul class="feature-cols">
+          <li><b>실데이터 그라운딩</b>:&nbsp;실제 DB에 존재하는 데이터셋만 추천, 조인키는 실 스키마 대조로 도출</li>
+          <li><b>하이브리드 검색 + CRAG</b>:&nbsp;Dense 시맨틱 + BM25(형태소) 재랭킹, 관련도 미달 시 질문을 스스로 재작성하는 자기교정 루프</li>
+          <li><b>근거·출처 자동 부착</b>:&nbsp;모든 생성 문장을 검색 근거와 대조, 미달 문장엔 "근거 미확인" 경고</li>
+          <li><b>도메인 파인튜닝 sLLM</b>:&nbsp;QLoRA로 파인튜닝한 경량 단일 모델로 의도추출·시나리오 생성·재작성 일괄 처리</li>
+          <li><b>6차원 데이터 품질 진단</b>:&nbsp;완전성·최신성·정확성·일관성·접근성·추적가능성 자동 채점</li>
+          <li><b>시큐리티 바이 디자인</b>:&nbsp;입력·컨텍스트·출력 3중 PII 마스킹, 프롬프트 인젝션 차단, HMAC 서명·감사로그</li>
+        </ul>
+      </div>
+      <div class="metric-panel reveal" data-delay="2">
+        <div class="m"><div class="v">0건</div><div class="k">데이터셋 환각 · 실 DB 스키마 그라운딩 구조 기준</div></div>
+        <div class="m"><div class="v">56만+</div><div class="k">색인된 법령·정책·사례 근거</div></div>
+        <div class="m"><div class="v">12단계</div><div class="k">질문→보고서 E2E 파이프라인</div></div>
+        <div class="m"><div class="v">3중</div><div class="k">PII 마스킹 (입력·컨텍스트·출력)</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 03 DocVec ===== -->
+<section class="sol-block" id="docvec">
+  <div class="watermark" aria-hidden="true">VECTOR</div>
+  <div class="wrap">
+    <div class="sol-head reveal">
+      <span class="sol-icon"><span class="material-symbols-outlined" aria-hidden="true">description</span></span>
+      <span class="sol-num">SOLUTION 03</span>
+      <h2 class="sol-name">DocVec</h2>
+      <span class="sol-cat">RAG Data Platform · Vector DB · Hybrid LLM</span>
+    </div>
+    <p class="sol-tagline reveal">문서를 신뢰할 수 있는 답변으로. AI 프로젝트의 데이터 계층.</p>
+    <p class="sol-desc reveal" data-delay="1">
+      업로드부터 청크·임베딩, 벡터 인덱싱, 하이브리드 검색, 인용 기반 답변까지,
+      <strong>RAG 구축·운영의 전 과정을 하나의 플랫폼</strong>에서 처리합니다.
+      민감 데이터는 로컬 LLM으로, 필요할 때만 클라우드 모델로, 비용과 데이터 주권을 함께 통제합니다.
+    </p>
+    <div class="sol-grid">
+      <div class="reveal" data-delay="1">
+        <ul class="feature-cols">
+          <li><b>하이브리드 LLM 아키텍처</b>:&nbsp;온프레미스 로컬 모델 + 클라우드 모델(OpenAI·Anthropic)을 작업 단위로 선택</li>
+          <li><b>시맨틱 + 키워드 하이브리드 검색</b>:&nbsp;다국어 임베딩과 Qdrant 벡터 DB, 키워드 검색 결합으로 재현율 보완</li>
+          <li><b>Grounded Answers</b>:&nbsp;모든 답변에 근거 문서·페이지·컬렉션을 인용, 추적·검증 가능</li>
+          <li><b>멀티테넌시</b>:&nbsp;컬렉션·API 키·시스템 프롬프트를 프로젝트 단위로 격리, 팀·고객별 독립 운영</li>
+          <li><b>RBAC 거버넌스</b>:&nbsp;Owner·Editor·Viewer 역할 기반 접근 제어</li>
+          <li><b>비동기 파이프라인</b>:&nbsp;작업 큐 기반 대용량 문서 백그라운드 처리, 상태 실시간 추적</li>
+        </ul>
+      </div>
+      <div class="metric-panel reveal" data-delay="2">
+        <div class="m"><div class="v">E2E</div><div class="k">업로드→임베딩→검색→인용 단일 플랫폼</div></div>
+        <div class="m"><div class="v">Hybrid</div><div class="k">로컬 sLLM + 클라우드 LLM 선택 구동</div></div>
+        <div class="m"><div class="v">100%</div><div class="k">출처 인용 기반 답변 (Grounded)</div></div>
+        <div class="m"><div class="v">RBAC</div><div class="k">프로젝트 격리 + 역할 기반 접근 제어</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 04 PredictOps ===== -->
+<section class="sol-block alt" id="predictops">
+  <div class="watermark" aria-hidden="true">PREDICT</div>
+  <div class="wrap">
+    <div class="sol-head reveal">
+      <span class="sol-icon"><span class="material-symbols-outlined" aria-hidden="true">timeline</span></span>
+      <span class="sol-num">SOLUTION 04</span>
+      <h2 class="sol-name">PredictOps</h2>
+      <span class="sol-cat">Forecasting Simulation · MLOps · AutoML</span>
+    </div>
+    <p class="sol-tagline reveal">예측의 신뢰성은 모델이 아니라 데이터 정합성에서 시작됩니다.</p>
+    <p class="sol-desc reveal" data-delay="1">
+      매출·수요·재고·에너지 등 어떤 시계열이든 연결해 <strong>18종 예측 모델을 AutoML 방식으로 병렬 실험·비교</strong>하는
+      웹 기반 예측 시뮬레이션 엔진. 실행 직전 데이터 정합성을 자동 진단하는 Pre-flight 게이트가
+      "이 데이터셋에서만 좋아 보이는 모델"을 걸러냅니다.
+    </p>
+    <div class="sol-grid">
+      <div class="reveal" data-delay="1">
+        <ul class="feature-cols">
+          <li><b>18종 모델 병렬 실험</b>:&nbsp;ARIMA·SARIMA부터 XGBoost·LGBM, LSTM·N-BEATS까지 한 화면에서 실행·비교</li>
+          <li><b>앙상블 3종 결합</b>:&nbsp;Voting·Stacking·Blending, 동일 모델 하이퍼파라미터 다중 인스턴스 동시 실험</li>
+          <li><b>정합성 자동 진단 6종</b>:&nbsp;Look-ahead 누수 차단, 주기 정규화, 스케일 진단, 변환 검증, 커버리지 보정, Pre-flight 종합 점검</li>
+          <li><b>요인별 전처리 26종</b>:&nbsp;결측·이상치·스케일·시차를 설명변수별로 개별 최적화</li>
+          <li><b>정교한 요인 분석</b>:&nbsp;교차상관 최적 시차, 그레인저 인과, VIF 다중공선성, 순열 중요도로 근거 있는 변수 선택</li>
+          <li><b>MLOps 운영 체계</b>:&nbsp;실험 이력 관리와 지속 재학습(CT)으로 배포 후에도 성능 유지</li>
+        </ul>
+      </div>
+      <div class="metric-panel reveal" data-delay="2">
+        <div class="m"><div class="v">18종</div><div class="k">예측 모델 (통계·트리·딥러닝)</div></div>
+        <div class="m"><div class="v">26종</div><div class="k">요인별 전처리 옵션</div></div>
+        <div class="m"><div class="v">6종</div><div class="k">실행 전 정합성 자동 진단 (GUARD)</div></div>
+        <div class="m"><div class="v">3종</div><div class="k">앙상블 결합 (Voting·Stacking·Blending)</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 05 DataForge ===== -->
+<section class="sol-block" id="dataforge">
+  <div class="watermark" aria-hidden="true">FORGE</div>
+  <div class="wrap">
+    <div class="sol-head reveal">
+      <span class="sol-icon"><span class="material-symbols-outlined" aria-hidden="true">analytics</span></span>
+      <span class="sol-num">SOLUTION 05</span>
+      <h2 class="sol-name">DataForge</h2>
+      <span class="sol-cat">Enterprise EDA · No-Code · On-Premise</span>
+    </div>
+    <p class="sol-tagline reveal">"코드는 없이, 근거는 전부."</p>
+    <p class="sol-desc reveal" data-delay="1">
+      데이터 로딩부터 보고서까지 <strong>EDA 8단계 전 과정을 코드 한 줄 없이</strong> 수행하는
+      증강분석(Augmented Analytics) 데스크탑 솔루션. 모든 변경은 100% 기록되고 원본부터 그대로 재현되며,
+      데이터가 내 PC를 떠나지 않습니다.
+    </p>
+    <div class="sol-grid">
+      <div class="reveal" data-delay="1">
+        <ul class="feature-cols">
+          <li><b>노코드 8단계 EDA</b>:&nbsp;프로파일링·이상치·다변량·타겟 분석을 GUI 한 화면에서, 필요 시 동일 작업의 Python 코드 제공</li>
+          <li><b>통계 해석 자동 생성</b>:&nbsp;차트 옆에 통계 진단과 자연어 해석을 나란히, 검증 코드 원클릭 확인</li>
+          <li><b>이상치 탐지 4종 + Quick Fix</b>:&nbsp;IQR·Z-Score·Modified Z·Percentile 탐지 후 그 자리에서 즉시 처리</li>
+          <li><b>XAI 기반 중요도 5종 비교</b>:&nbsp;RF·Permutation·MI·XGBoost·SHAP 매트릭스로 알고리즘 편향까지 검증</li>
+          <li><b>Action Replay</b>:&nbsp;원본 읽기 전용 보존, 승인된 변경만 기록·순차 재실행으로 완전 재현</li>
+          <li><b>데이터 주권</b>:&nbsp;로컬 루프백(127.0.0.1) 전용 구동, 클라우드 반출 경로 원천 차단, CP949·EUC-KR 자동 감지</li>
+        </ul>
+      </div>
+      <div class="metric-panel reveal" data-delay="2">
+        <div class="m"><div class="v">8단계</div><div class="k">EDA 전 과정 노코드 파이프라인</div></div>
+        <div class="m"><div class="v">100%</div><div class="k">작업 이력 추적·재현 (Action Replay)</div></div>
+        <div class="m"><div class="v">5종</div><div class="k">타겟 중요도 알고리즘 교차 검증</div></div>
+        <div class="m"><div class="v">0건</div><div class="k">원본 훼손 · 외부 데이터 반출 (읽기 전용 보존)</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CTA ===== -->
+<section class="section">
+  <div class="wrap">
+    <div class="cta-band reveal">
+      <span class="eyebrow" style="justify-content:center">Technical Demo</span>
+      <h2 style="margin-top:14px">우리 데이터에 맞는 솔루션이 궁금하다면</h2>
+      <p>보유 데이터와 목표를 알려주시면, 가장 적합한 솔루션 조합과 PoC 방안을 제안드립니다.</p>
+      <a href="contact.html?t=demo" class="btn btn-primary">기술 데모 요청하기 <span class="arr" aria-hidden="true">→</span></a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <a href="index.html" class="logo"><span class="logo-d">D</span>GURU</a>
+        <p class="slogan">데이터에서 지능으로, 지능에서 가치로.<br />AI 핵심을 설계하는 데이터 인텔리전스 전문기업.</p>
+      </div>
+      <div>
+        <h4>Sitemap</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="technology.html">Technology</a></li>
+          <li><a href="service.html">Service</a></li>
+          <li><a href="performance.html">Performance</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Company</h4>
+        <ul class="info">
+          <li><b>(주)디구루</b>:&nbsp; 대표 소수환</li>
+          <li>사업자등록번호 249-88-00530</li>
+          <li>경기도 성남시 분당구 황새울로 315, 302호</li>
+          <li>Tel 031-698-3787 · Fax 070-4324-3788</li>
+          <li><a href="mailto:ssh@dataguru.co.kr">ssh@dataguru.co.kr</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 DGURU Co., Ltd. All rights reserved.</span>
+      <span class="mono-label">From Data to Intelligence, From Intelligence to Value</span>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>

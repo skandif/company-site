@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>디구루(DGURU) | AI·빅데이터 분석 전문기업 | 수요예측·예지정비·에너지 최적화</title>
+  <meta name="description" content="(주)디구루, AI·빅데이터 분석 전문기업. 수요예측, 예지정비, 에너지 최적화 등 검증된 예측 AI로 비즈니스 가치를 만듭니다." />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="디구루 DGURU" />
+  <meta property="og:title" content="디구루(DGURU) | AI·빅데이터 분석 전문기업" />
+  <meta property="og:description" content="데이터에서 지능으로, 지능에서 가치로. 수요예측·예지정비·에너지 최적화 전문 예측 AI 기업." />
+  <meta name="twitter:card" content="summary" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23060f1f'/%3E%3Ctext x='32' y='45' font-family='Arial' font-size='38' font-weight='700' fill='%234d8dff' text-anchor='middle'%3ED%3C/text%3E%3C/svg%3E" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <noscript><style>.reveal{opacity:1;transform:none}.material-symbols-outlined{opacity:1}</style></noscript>
+</head>
+<body>
+
+<canvas id="bg-canvas" aria-hidden="true"></canvas>
+<div class="bg-vignette"></div>
+
+<!-- ===== NAV ===== -->
+<header class="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="logo"><span class="logo-d">D</span>GURU</a>
+    <nav class="menu">
+      <a href="index.html" class="active">Home</a>
+      <a href="technology.html">Technology</a>
+      <a href="service.html">Service</a>
+      <a href="performance.html">Performance</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <div class="nav-cta">
+      <a href="contact.html" class="btn btn-primary">프로젝트 문의</a>
+    </div>
+  </div>
+</header>
+
+<!-- ===== HERO ===== -->
+<section class="hero">
+  <div class="wrap">
+    <div class="hero-badge reveal in"><span class="dot"></span>AI · BIG DATA · INTELLIGENCE · SINCE 2016</div>
+    <h1 class="h-display reveal in">데이터에서 지능으로,<br /><span class="grad-text">지능에서 가치로.</span></h1>
+    <p class="hero-sub reveal in" data-delay="1">FROM DATA TO INTELLIGENCE, FROM INTELLIGENCE TO VALUE</p>
+    <p class="lead reveal" data-delay="1">
+      디구루는 AI 핵심을 설계하는 데이터 인텔리전스 전문기업입니다.
+      수요예측·예지정비·에너지 최적화 등 현장에서 검증된 예측 AI와 자체 솔루션으로
+      기업과 공공의 데이터를 실질적인 비즈니스 가치로 전환합니다.
+    </p>
+    <div class="hero-actions reveal" data-delay="2">
+      <a href="technology.html" class="btn btn-primary">솔루션 살펴보기 <span class="arr" aria-hidden="true">→</span></a>
+      <a href="performance.html" class="btn btn-ghost">레퍼런스 보기 <span class="arr" aria-hidden="true">→</span></a>
+    </div>
+  </div>
+  <div class="scroll-hint">Scroll</div>
+</section>
+
+<!-- ===== STATS ===== -->
+<section class="stats-band">
+  <div class="wrap">
+    <div class="stats-row">
+      <div class="stat reveal">
+        <div class="num">2016</div>
+        <div class="label">설립 · 예측 AI 한 길</div>
+      </div>
+      <div class="stat reveal" data-delay="1">
+        <div class="num" data-count="20" data-suffix="+">0</div>
+        <div class="label">공공·민간 고객 및 파트너</div>
+      </div>
+      <div class="stat reveal" data-delay="2">
+        <div class="num" data-count="5">0</div>
+        <div class="label">자체 개발 AI 솔루션</div>
+      </div>
+      <div class="stat reveal" data-delay="3">
+        <div class="num" data-count="90" data-suffix="%+">0</div>
+        <div class="label">고장예지 정확도 · 철도 인프라 실증</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== PHILOSOPHY / DNA ===== -->
+<section class="section" id="dna">
+  <div class="watermark" aria-hidden="true">PHILOSOPHY</div>
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">DGURU DNA</span>
+      <h2 class="h-section">진정한 AI는<br />데이터 기술 위에서 서비스됩니다</h2>
+      <p class="lead">기업과 공공이 보유한 데이터의 가치를 높이는 것. AI의 활용은 분석을 위한 모델에서 시작하고, 그 모델은 견고한 데이터 기술 기반 위에서만 진짜 서비스가 됩니다.</p>
+    </div>
+
+    <div class="grid grid-2" style="margin-bottom:22px">
+      <div class="card reveal">
+        <span class="tag">Vision</span>
+        <h3 style="margin-top:18px">Intelligence, Everywhere Data Lives</h3>
+        <p>데이터가 있는 모든 곳에 지능을. 우리는 데이터에서 인사이트를 발견하고, 분석 결과가 보고서에서 멈추지 않고 현장의 의사결정과 성과로 이어지도록 설계합니다.</p>
+      </div>
+      <div class="card reveal" data-delay="1">
+        <span class="tag">Mission</span>
+        <h3 style="margin-top:18px">From Insight to Impact</h3>
+        <p>검증 가능한 모델, 재현 가능한 파이프라인, 지속 가능한 운영. 이 세 가지 원칙으로 데이터 분석을 변화의 힘으로 전환하고, 고객 비즈니스의 가치를 이어줍니다.</p>
+      </div>
+    </div>
+
+    <div class="grid grid-3">
+      <div class="card reveal">
+        <div class="card-icon"><span class="material-symbols-outlined" aria-hidden="true">neurology</span></div>
+        <h3>Architecting Intelligence</h3>
+        <p>비즈니스 문제를 AI 아키텍처로 번역합니다. 모델이 아니라 문제 해결의 구조 전체를 설계합니다.</p>
+      </div>
+      <div class="card reveal" data-delay="1">
+        <div class="card-icon"><span class="material-symbols-outlined" aria-hidden="true">verified_user</span></div>
+        <h3>Responsible AI</h3>
+        <p>환각 차단, 근거 추적, 데이터 주권. 신뢰할 수 없는 AI는 서비스하지 않는다는 원칙을 지킵니다.</p>
+      </div>
+      <div class="card reveal" data-delay="2">
+        <div class="card-icon"><span class="material-symbols-outlined" aria-hidden="true">monitoring</span></div>
+        <h3>Proven by Numbers</h3>
+        <p>정확도, 절감률, 예측력. 모든 프로젝트의 성과를 정량 지표로 검증하고 숫자로 증명합니다.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== BUSINESS AREAS ===== -->
+<section class="section" style="background:rgba(6,15,31,0.45)">
+  <div class="watermark" aria-hidden="true">WHAT WE DO</div>
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">What We Do</span>
+      <h2 class="h-section">데이터 체계부터 AI 운영까지,<br />엔드투엔드로 책임집니다</h2>
+    </div>
+    <div class="grid grid-4">
+      <div class="card reveal">
+        <div class="card-icon"><span class="material-symbols-outlined" aria-hidden="true">database</span></div>
+        <h3>데이터 파운데이션</h3>
+        <p>지속적인 분석이 가능한 데이터 체계 설계. 표준화·거버넌스로 데이터의 가용성과 활용성을 극대화합니다.</p>
+      </div>
+      <div class="card reveal" data-delay="1">
+        <div class="card-icon"><span class="material-symbols-outlined" aria-hidden="true">query_stats</span></div>
+        <h3>데이터 인텔리전스</h3>
+        <p>탐색·마이닝 기반 인사이트 도출과 LLM 기반 분석 서비스로 다각화된 의사결정을 지원합니다.</p>
+      </div>
+      <div class="card reveal" data-delay="2">
+        <div class="card-icon"><span class="material-symbols-outlined" aria-hidden="true">model_training</span></div>
+        <h3>AI 분석모델 개발</h3>
+        <p>딥러닝·머신러닝 기반의 검증된 예측 모델을 개발하고, 지속 학습으로 성능을 유지·고도화합니다.</p>
+      </div>
+      <div class="card reveal" data-delay="3">
+        <div class="card-icon"><span class="material-symbols-outlined" aria-hidden="true">school</span></div>
+        <h3>운영·교육 지원</h3>
+        <p>분석 설계 교육과 유지보수 지원으로 도입 후에도 모델이 살아있는 조직을 만듭니다.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== HISTORY ===== -->
+<section class="section">
+  <div class="watermark" aria-hidden="true">HISTORY</div>
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">History</span>
+      <h2 class="h-section">2016년부터 쌓아온 전문성</h2>
+      <p class="lead">수요예측에서 시작해 이상탐지·고장예지, 공공 빅데이터 표준모델, AI 플랫폼까지 기술의 깊이를 단계적으로 확장해 왔습니다.</p>
+    </div>
+    <div class="timeline">
+      <div class="tl-item reveal">
+        <div class="year">2016~2017</div>
+        <div class="desc"><b>창업 및 투자 유치.</b> 글로벌 뷰티 기업 수요예측 기반 데이터 분석 서비스 구축. 수요예측 전문성의 출발점.</div>
+      </div>
+      <div class="tl-item reveal">
+        <div class="year">2018~2019</div>
+        <div class="desc"><b>신재생에너지 오픈 플랫폼 구축</b>(산업통상자원부 최우수상 수상). 스마트팩토리 타당성 검증, 수질관리 플랫폼 구축 등 산업·환경 영역 확장.</div>
+      </div>
+      <div class="tl-item reveal">
+        <div class="year">2020~2021</div>
+        <div class="desc"><b>이상탐지·고장예지 기술 고도화.</b> 차량 상태진단 알고리즘, 철도 신호설비 빅데이터 분석 서버, 국방 빅데이터 기반 화력운용체계, 물류 운임 추천 알고리즘 개발.</div>
+      </div>
+      <div class="tl-item reveal">
+        <div class="year">2022~2023</div>
+        <div class="desc"><b>공공 빅데이터 표준 분석모델 3년 연속 수행(2020~2022).</b> 스마트시티 데이터 플랫폼, 지능형 항만수요 예측시스템, 외국인 행정정보 플랫폼 구축.</div>
+      </div>
+      <div class="tl-item reveal">
+        <div class="year">2024~2025</div>
+        <div class="desc"><b>AI 융합 플랫폼 시대.</b> 통합 AI 융합 플랫폼 서비스, 산업단지 전력 데이터 분석, 범정부 UI/UX 디자인시스템 고도화 수주. 디지털 트윈 · RAG · 로컬 LLM 기술 개발로 생성형 AI 영역 확장.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CLIENTS ===== -->
+<section class="section" style="padding-top:0">
+  <div class="wrap">
+    <div class="section-head center reveal">
+      <span class="eyebrow">Trusted By</span>
+      <h2 class="h-section">함께한 고객과 파트너</h2>
+    </div>
+  </div>
+  <div class="marquee reveal">
+    <div class="marquee-track">
+      <span class="client-pill">AMOREPACIFIC</span>
+      <span class="client-pill">CJ대한통운</span>
+      <span class="client-pill">HD현대일렉트릭</span>
+      <span class="client-pill">KORAIL</span>
+      <span class="client-pill">전력거래소 KPX</span>
+      <span class="client-pill">만도 Mando</span>
+      <span class="client-pill">한솔로지스틱스</span>
+      <span class="client-pill">대한민국 국방부</span>
+    </div>
+  </div>
+  <div class="marquee reverse reveal" style="margin-top:16px">
+    <div class="marquee-track">
+      <span class="client-pill">행정안전부</span>
+      <span class="client-pill">법무부</span>
+      <span class="client-pill">NIA 한국지능정보사회진흥원</span>
+      <span class="client-pill">한국해양수산개발원 KMI</span>
+      <span class="client-pill">한국전자기술연구원 KETI</span>
+      <span class="client-pill">서울성모병원</span>
+      <span class="client-pill">인천스마트시티</span>
+      <span class="client-pill">청주시</span>
+      <span class="client-pill">영동군</span>
+      <span class="client-pill">단양군</span>
+      <span class="client-pill">세화</span>
+      <span class="client-pill">인피닉</span>
+      <span class="client-pill">솔트룩스</span>
+      <span class="client-pill">디윅스</span>
+      <span class="client-pill">다이퀘스트</span>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CTA ===== -->
+<section class="section" style="padding-top:20px">
+  <div class="wrap">
+    <div class="cta-band reveal">
+      <span class="eyebrow" style="justify-content:center">Get Started</span>
+      <h2 style="margin-top:14px">데이터는 이미 답을 알고 있습니다.<br /><span class="grad-text">디구루가 그 답을 꺼내드립니다.</span></h2>
+      <p>수요예측, 예지정비, 에너지 최적화 등 무엇이든 데이터로 검증 가능한 제안을 드립니다.</p>
+      <a href="contact.html" class="btn btn-primary">프로젝트 문의하기 <span class="arr" aria-hidden="true">→</span></a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <a href="index.html" class="logo"><span class="logo-d">D</span>GURU</a>
+        <p class="slogan">데이터에서 지능으로, 지능에서 가치로.<br />AI 핵심을 설계하는 데이터 인텔리전스 전문기업.</p>
+      </div>
+      <div>
+        <h4>Sitemap</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="technology.html">Technology</a></li>
+          <li><a href="service.html">Service</a></li>
+          <li><a href="performance.html">Performance</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Company</h4>
+        <ul class="info">
+          <li><b>(주)디구루</b> · 대표 소수환</li>
+          <li>사업자등록번호 249-88-00530</li>
+          <li>경기도 성남시 분당구 황새울로 315, 302호</li>
+          <li>Tel 031-698-3787 · Fax 070-4324-3788</li>
+          <li><a href="mailto:ssh@dataguru.co.kr">ssh@dataguru.co.kr</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 DGURU Co., Ltd. All rights reserved.</span>
+      <span class="mono-label">From Data to Intelligence, From Intelligence to Value</span>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>
